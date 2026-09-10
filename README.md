@@ -4,7 +4,7 @@ A collection of custom color palettes for Linux terminals.
 
 Currently developed and tested on Ubuntu 26.04 with Ptyxis.
 
-## Palettes
+## 🎨 Palettes
 
 | Palette          | Preview                                                            |
 | ---------------- | ------------------------------------------------------------------ |
@@ -13,7 +13,7 @@ Currently developed and tested on Ubuntu 26.04 with Ptyxis.
 
 ## Installation
 
-Create the Ptyxis palette directory and install the palette.
+Create the Ptyxis palette directory, then use the installation command provided for each palette.
 
 ## Ubuntu Theme + XTerm
 
@@ -79,7 +79,7 @@ Color15=#ffffff
 EOF
 ```
 
-To use the dark window appearance on Ubuntu/GNOME, set the system color scheme to dark:
+> To use the dark window appearance on Ubuntu/GNOME, set the system color scheme to dark:
 
 ```bash
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'

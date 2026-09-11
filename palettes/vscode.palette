@@ -2,10 +2,10 @@
 Name=VS Code XTerm
 
 Foreground=#FFFFFF
-Background=#16191D
+Background=#1D1D20
 
 TitlebarForeground=#FFFFFF
-TitlebarBackground=#16191D
+TitlebarBackground=#1D1D20
 
 Cursor=#FFFFFF
 

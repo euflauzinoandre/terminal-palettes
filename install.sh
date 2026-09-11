@@ -2,6 +2,7 @@
 
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PALETTE_DIR="$HOME/.local/share/org.gnome.Ptyxis/palettes"
 
 echo "Terminal Palettes"
@@ -17,12 +18,12 @@ read -rp "Enter your choice [1-2]: " choice
 
 case "$choice" in
     1)
-        PALETTE_FILE="palettes/ubuntu-xterm.palette"
+        PALETTE_FILE="$SCRIPT_DIR/palettes/ubuntu-xterm.palette"
         PALETTE_NAME="Ubuntu XTerm"
         COLOR_SCHEME="prefer-dark"
         ;;
     2)
-        PALETTE_FILE="palettes/vscode.palette"
+        PALETTE_FILE="$SCRIPT_DIR/palettes/vscode.palette"
         PALETTE_NAME="VS Code XTerm"
         COLOR_SCHEME="default"
         ;;

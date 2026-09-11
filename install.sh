@@ -3,6 +3,7 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 PALETTE_DIR="$HOME/.local/share/org.gnome.Ptyxis/palettes"
 
 echo "Terminal Palettes"
@@ -20,12 +21,12 @@ case "$choice" in
     1)
         PALETTE_FILE="$SCRIPT_DIR/palettes/ubuntu-xterm.palette"
         PALETTE_NAME="Ubuntu XTerm"
-        COLOR_SCHEME="prefer-dark"
+        PALETTE_ID="ubuntu-xterm"
         ;;
     2)
         PALETTE_FILE="$SCRIPT_DIR/palettes/vscode.palette"
         PALETTE_NAME="VS Code XTerm"
-        COLOR_SCHEME="default"
+        PALETTE_ID="vscode"
         ;;
     *)
         echo
@@ -42,9 +43,7 @@ PROFILE_ID=$(gsettings get org.gnome.Ptyxis default-profile-uuid | tr -d "'")
 
 gsettings set \
     "org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/$PROFILE_ID/" \
-    palette "$PALETTE_NAME"
-
-gsettings set org.gnome.desktop.interface color-scheme "$COLOR_SCHEME"
+    palette "$PALETTE_ID"
 
 echo
 echo "Installed: $PALETTE_NAME"

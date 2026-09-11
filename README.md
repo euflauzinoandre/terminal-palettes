@@ -5,15 +5,14 @@ A collection of custom color palettes for Linux terminals.
 Currently developed and tested on Ubuntu 26.04 with Ptyxis.
 
 ## 🎨 Palettes
-
 | Palette          | Preview |
 | ---------------- | ------- |
-| **Ubuntu XTerm** | [![Ubuntu XTerm](./images/ubuntu-xterm.png)](./images/ubuntu-xterm.png) |
-| **VS Code**      | [![VS Code](./images/vscode.png)](./images/vscode.png) |
+| **Ubuntu XTerm** | [View image](./images/ubuntu-xterm.png) |
+| **VS Code**      | [View image](./images/vscode.png) |
 
 ## Installation
 
-Clone the repository and enter the project directory:
+> Clone the repository and enter the project directory:
 
 ```bash
 git clone https://github.com/euflauzinoandre/terminal-palettes.git
